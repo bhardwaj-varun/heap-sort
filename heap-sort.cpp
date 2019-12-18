@@ -42,6 +42,7 @@ int deleteRoot(int a[], int n){
     // exchange root with last element and then delete last element
     // then heapify
     swap(a[0], a[n-1]);
+    // n-1 means omit last element for heapification
     heapify(a, n-1, 0); //heapify from root only
     return a[n-1];
 }
